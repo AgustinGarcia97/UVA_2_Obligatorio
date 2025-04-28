@@ -1,0 +1,78 @@
+.materias-container {
+    display: grid;
+    gap: 20px;
+    padding: 40px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: 100vh;
+  }
+  
+
+  .materias-container {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Tablets */
+  @media (min-width: 600px) {
+    .materias-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Laptops*/
+  @media (min-width: 900px) {
+    .materias-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* PCs*/
+  @media (min-width: 1200px) {
+    .materias-container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  .materia-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 350px;
+  }
+  
+  .materia-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .materia-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .materia-card h2 {
+    font-size: 1.2rem;
+    margin: 15px 10px 10px;
+    color: #333;
+  }
+  
+  .materia-card a {
+    display: inline-block;
+    margin: 15px;
+    padding: 10px 20px;
+    background-color: #4A90E2;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .materia-card a:hover {
+    background-color: #357ABD;
+  }
+  

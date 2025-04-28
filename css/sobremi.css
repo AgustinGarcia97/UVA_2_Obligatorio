@@ -1,0 +1,186 @@
+main, .card, main ul {
+    display: flex;
+    flex-direction: column;
+}
+main {
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+main h2 {
+    font-size: 40px;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    width: 100%;
+}
+
+.card {
+    height: auto;
+    padding: 20px;
+    width: 90%; 
+    max-width: 1000px; 
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.card h3 {
+    font-size: 30px;
+    padding: 10px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.card ul {
+    width: 100%;
+}
+
+.card ul li {
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgba(13, 39, 140, 0.152);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    filter: brightness(0.6);
+    transition: 0.3s;
+    flex-wrap: wrap; 
+}
+
+.card ul li:hover {
+    filter: brightness(1);
+    transition: 0.3s;
+}
+
+.card ul li div {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.card ul li p {
+    font-size: 18px;
+    margin-right: 20px;
+    width: 100%;
+    font-weight: 500;
+    color: #000;
+    flex: 1;
+}
+
+main ul li .text-container {
+    width: 40%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(4, 4, 75, 0.879);
+    padding: 5px;
+    border-radius: 20px;
+}
+main ul li .text-container p {
+    font-size: 25px;
+    font-weight: bold;
+    color: #eae8e8;
+}
+
+main ul li .img-container {
+    width: 50%;
+    border-radius: 20px;
+}
+
+.card ul li img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    
+
+    
+}
+
+.info-img{
+    height: 200px;
+    width: 20%;
+    object-position: center bottom;
+ 
+   
+   
+}
+
+.info-img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgb(15, 8, 107);
+}
+
+
+
+/* Tablets */
+@media (max-width: 900px) {
+    .card {
+        width: 90%;
+        flex-direction: column;
+       
+    }
+    
+    .card ul li {
+        flex-direction: column;
+    }
+
+    .text-container, .img-container {
+        width: 100%;
+    }
+
+    main h2 {
+        font-size: 32px;
+    }
+
+    .card h3 {
+        font-size: 28px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+
+    .card {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .card h3 {
+        font-size: 24px;
+    }
+
+    main h2 {
+        font-size: 28px;
+    }
+
+    .card ul li img {
+        height: 200px; 
+    }
+
+    main ul li .text-container p {
+        font-size: 20px;
+    }
+}
